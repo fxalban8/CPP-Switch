@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 int main() {
@@ -14,6 +15,8 @@ int main() {
 
 	cout<<"Press one of the previous numbers: "<<flush;
 	cin>>option;
+	cout<<"Waiting.."<<endl;
+	sleep(5);
 	switch (option){
 		case 1: 
 			cout<<"Information saved"<<endl;
@@ -32,7 +35,7 @@ int main() {
 			break;
 	}
 	
-
+	cin.get();
 
 	return 0;
 }
